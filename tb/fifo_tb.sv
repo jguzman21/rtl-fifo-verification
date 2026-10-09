@@ -277,7 +277,7 @@ module fifo_tb;
         transact(0, 1, 8'h00);
 
         // Test 6C: simultaneous read/write while FULL.
-        // Read is accepted; write is rejected by our FIFO policy.
+        // Read is accepted; write is rejected by the FIFO policy.
         $display("Test 6C: simultaneous read/write while full");
 
         transact(1, 0, 8'h60);
